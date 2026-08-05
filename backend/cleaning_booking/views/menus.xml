@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- ── Root Menu ── -->
+    <menuitem id="menu_cleaning_root"
+        name="Cleaning"
+        web_icon="cleaning_booking,static/description/icon.png"
+        sequence="50"/>
+
+    <!-- ── Operations Submenu ── -->
+    <menuitem id="menu_cleaning_operations"
+        name="Operations"
+        parent="menu_cleaning_root"
+        sequence="10"/>
+
+    <menuitem id="menu_cleaning_bookings"
+        name="Bookings"
+        parent="menu_cleaning_operations"
+        action="action_clean_booking"
+        sequence="10"/>
+
+    <!-- ── Configuration Submenu ── -->
+    <menuitem id="menu_cleaning_config"
+        name="Configuration"
+        parent="menu_cleaning_root"
+        sequence="90"
+        groups="cleaning_booking.group_cleaning_manager"/>
+
+    <menuitem id="menu_cleaning_pricing"
+        name="Property Size Tiers"
+        parent="menu_cleaning_config"
+        action="action_clean_pricing"
+        sequence="10"/>
+
+    <menuitem id="menu_cleaning_levels"
+        name="Clean Levels"
+        parent="menu_cleaning_config"
+        action="action_clean_level"
+        sequence="20"/>
+
+    <menuitem id="menu_cleaning_addons"
+        name="Add-ons"
+        parent="menu_cleaning_config"
+        action="action_clean_addon"
+        sequence="30"/>
+
+    <menuitem id="menu_cleaning_time_slots"
+        name="Time Slots"
+        parent="menu_cleaning_config"
+        action="action_clean_time_slot"
+        sequence="40"/>
+
+    <menuitem id="menu_cleaning_frequencies"
+        name="Frequencies"
+        parent="menu_cleaning_config"
+        action="action_clean_frequency"
+        sequence="50"/>
+
+    <menuitem id="menu_cleaning_bedroom_options"
+        name="Bedroom Options"
+        parent="menu_cleaning_config"
+        action="action_clean_bedroom_option"
+        sequence="55"/>
+
+    <menuitem id="menu_cleaning_bathroom_options"
+        name="Bathroom Options"
+        parent="menu_cleaning_config"
+        action="action_clean_bathroom_option"
+        sequence="60"/>
+
+    <menuitem id="menu_cleaning_access_methods"
+        name="Access Methods"
+        parent="menu_cleaning_config"
+        action="action_clean_access_method"
+        sequence="70"/>
+
+    <menuitem id="menu_cleaning_contact_preferences"
+        name="Contact Preferences"
+        parent="menu_cleaning_config"
+        action="action_clean_contact_preference"
+        sequence="80"/>
+</odoo>

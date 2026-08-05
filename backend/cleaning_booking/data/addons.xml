@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="addon_carpet_clean" model="clean.addon">
+            <field name="name">Carpet Cleaning</field>
+            <field name="code">carpet_clean</field>
+            <field name="description">Professional carpet shampooing and stain removal.</field>
+            <field name="price">40.00</field>
+            <field name="duration_delta">1.0</field>
+            <field name="sequence">1</field>
+        </record>
+
+        <record id="addon_oven_clean" model="clean.addon">
+            <field name="name">Oven Cleaning</field>
+            <field name="code">oven_clean</field>
+            <field name="description">Thorough oven degreasing and interior clean.</field>
+            <field name="price">25.00</field>
+            <field name="duration_delta">0.5</field>
+            <field name="sequence">2</field>
+        </record>
+    </data>
+</odoo>

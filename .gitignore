@@ -1,0 +1,74 @@
+# ==========================
+# Dependencies
+# ==========================
+node_modules/
+
+# ==========================
+# Next.js
+# ==========================
+.next/
+out/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# ==========================
+# Python
+# ==========================
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ==========================
+# Logs
+# ==========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==========================
+# IDE
+# ==========================
+.vscode/
+.idea/
+
+# ==========================
+# Operating System
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Build
+# ==========================
+dist/
+build/
+
+# ==========================
+# Coverage
+# ==========================
+coverage/
+
+
+# Temporary files
+.tmp/
+tmp/
+
+# NPM cache
+.npm/
+npm-cache/
+
+# Turbo cache
+.turbo/
+
+# Local uploads / temp
+*.tmp
